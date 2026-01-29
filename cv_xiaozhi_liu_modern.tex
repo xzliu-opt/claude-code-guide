@@ -1,0 +1,268 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Xiaozhi Liu - Modern Tech Industry CV
+% Clean, ATS-Friendly, Minimalist Design
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font popular in tech
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Xiaozhi Liu} \\ \vspace{8pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ (+86) 135-9300-4230 ~
+    \href{mailto:xzliu@buaa.edu.cn}{\raisebox{-0.2\height}\faEnvelope\ \underline{xzliu@buaa.edu.cn}} ~
+    \href{https://xzliu-opt.github.io/}{\raisebox{-0.2\height}\faGlobe\ \underline{xzliu-opt.github.io}} ~
+    \href{https://github.com/xzliu-opt}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/xzliu-opt}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Beihang University}{Beijing, China}
+      {Ph.D. in Applied Mathematics, \textbf{GPA: 91.45/100 (Rank: 4/27)}}{Sept. 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{School of Mathematical Sciences \& \textbf{Shen Yuan Honors College} (Top 35 students university-wide)}
+        \resumeItem{Supervisor: Prof. Yong Xia}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Northwestern Polytechnical University}{Xi'an, China}
+      {B.S. in Information \& Computing Science, \textbf{GPA: 88.01/100 (Rank: 4/43)}}{Sept. 2018 -- Jul. 2022}
+      \resumeItemListStart
+        \resumeItem{Achieved GPA of \textbf{97.89/100} during junior year, ranking \textbf{1st in entire college (1/104)}}
+        \resumeItem{Supervisor: Prof. Jianchao Bai}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Université catholique de Louvain}{Louvain-la-Neuve, Belgium}
+      {Visiting Ph.D. in Applied Mathematics, \textbf{Funded by China Scholarship Council (CSC)}}{Oct. 2025 -- Oct. 2026}
+      \resumeItemListStart
+        \resumeItem{INMA/ICTEAM | Supervisor: Prof. Geovani N. Grapiglia}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%-----------RESEARCH INTERESTS-----------
+\section{Research Interests}
+    \small{Optimization theory and algorithms, with applications in \textbf{signal processing} and \textbf{wireless communications}. Focus on developing efficient algorithms for large-scale optimization problems in 5G/6G MIMO systems and machine learning.}
+\vspace{-8pt}
+
+%-----------PUBLICATIONS-----------
+\section{Publications \& Preprints}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{A Unified Algorithmic Framework for Dynamic Compressive Sensing}}{2025}
+          \resumeItemListStart
+            \resumeItem{\textbf{Xiaozhi Liu}, Yong Xia. \textit{Signal Processing: 232, 109926.} [\href{https://github.com/xzliu-opt}{GitHub}]}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Cubic NK-SVD: Parametric Dictionary Design in Frequency Estimation}}{2025}
+          \resumeItemListStart
+            \resumeItem{\textbf{Xiaozhi Liu}, Yong Xia. \textit{Signal Processing: 235, 110029.} [\href{https://github.com/xzliu-opt}{GitHub}]}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Split-Merge: A Difference-based Approach for Dominant Eigenvalue Problem}}{2025}
+          \resumeItemListStart
+            \resumeItem{\textbf{Xiaozhi Liu}, Yong Xia. \textit{arXiv: 2501.15131.}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Split-Merge Revisited: Scalable Generalized Eigenvalue Problems}}{2025}
+          \resumeItemListStart
+            \resumeItem{\textbf{Xiaozhi Liu}, Yong Xia. \textit{arXiv: 2507.02389.}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Revisiting Atomic Norm Minimization: Sequential Atom Identification}}{2024}
+          \resumeItemListStart
+            \resumeItem{\textbf{Xiaozhi Liu}$^*$, Jinjiang Wei$^*$, Yong Xia. \textit{arXiv: 2411.08459.}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Key R\&D Program of China}{Sept. 2022 -- Present}
+      {Core Technical Member | 5.5G Massive MIMO Parameter Estimation}{Beihang University}
+      \resumeItemListStart
+        \resumeItem{Developed novel algorithms for channel state information (CSI) estimation in 5.5G Massive MIMO systems}
+        \resumeItem{Optimized hybrid beamforming (HBF) algorithms, improving spectral efficiency by 30\%}
+        \resumeItem{Implemented super-resolution parameter estimation techniques using compressive sensing and optimization}
+        \resumeItem{Published 2 papers in \textit{Signal Processing} journal (IF: 4.4, Q1)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ASC International Student Supercomputer Challenge}{Nov. 2020 -- Jan. 2021}
+      {Project Leader | BERT Model for NLP Cloze Tests}{\textbf{Second Prize}}
+      \resumeItemListStart
+        \resumeItem{Led team to implement and optimize BERT model under PyTorch framework from scratch}
+        \resumeItem{Achieved 85\%+ accuracy on CLOTH dataset through fine-tuning and hyperparameter optimization}
+        \resumeItem{Leveraged GPU parallel computing on Linux HPC platform, reducing training time by 60\%}
+        \resumeItem{Designed efficient data pipeline for large-scale NLP dataset processing}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hong Kong Baptist University}{Aug. 2025 -- Sep. 2025}
+      {Research Assistant | LLM Fine-tuning Optimization}{Hong Kong, China}
+      \resumeItemListStart
+        \resumeItem{Improved LoRA-based parameter-efficient fine-tuning (PEFT) strategies for large language models}
+        \resumeItem{Reduced fine-tuning parameters by 40\% while maintaining model performance}
+        \resumeItem{Collaborated with Prof. Michael K. Ng (SIAM Fellow) and Prof. Guangning Xu}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------HONORS & AWARDS-----------
+\section{Honors \& Awards}
+    \begin{multicols}{2}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{National Scholarship} (Ph.D., Top 0.2\%) \hfill 2025 \\
+         \textbf{National Scholarship} (B.S., Top 0.2\%) \hfill 2021 \\
+         \textbf{Ph.D. Freshman Scholarship} (Top 3/College) \hfill 2022 \\
+         \textbf{Outstanding Graduate} \hfill 2022 \\
+         \textbf{1st Prize}, National Math Competition \hfill 2020 \\
+         \textbf{1st Prize}, Math Contest in Modelling \hfill 2020 \\
+        }}
+    \end{itemize}
+    \end{multicols}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, MATLAB, C, Julia, LaTeX} \\
+     \textbf{ML/DL Frameworks}{: PyTorch, TensorFlow, scikit-learn, NumPy, Pandas} \\
+     \textbf{Tools \& Platforms}{: Git, Linux, Docker, Jupyter, VS Code} \\
+     \textbf{High Performance Computing}{: CUDA, GPU Programming, Parallel Computing} \\
+     \textbf{Languages}{: English (Fluent - CET-4: 593, CET-6: 523, PETS-5), Mandarin (Native)} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------CONFERENCE PRESENTATIONS-----------
+\section{Conference Presentations}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {21st Annual Meeting of CSIAM}{Oct. 12-15, 2023}
+        \resumeItemListStart
+          \resumeItem{\textit{A Unified Algorithmic Framework for Dynamic Compressive Sensing}, Kunming, Yunnan}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {1st ORSC Conference on Data Science and OR Intelligence}{Sep. 13-15, 2024}
+        \resumeItemListStart
+          \resumeItem{\textit{Cubic NK-SVD: An Algorithm for Designing Parametric Dictionary}, Beijing}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
